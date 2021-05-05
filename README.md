@@ -173,12 +173,18 @@ Cuando esté creando la instancia deberá configurar los puertos que estarán ab
 - HTTP (80/TCP)
 - HTTPS (443/TCP)
 
+https://imgur.com/F27xkQ5
+
 ### 1.2.2 Paso 2
 
-Obtener la dirección IP pública de su instancia EC2 en AWS.
+Obtener la dirección IP pública de su instancia EC2 en AWS. 
+
+54.145.38.83
 ### 1.2.3 Paso 3
 
 Registrar un nombre de dominio en algún proveedor de nombres de dominio gratuito. Por ejemplo, puede hacer uso de Freenom.
+
+Emplearemos el dominio jpadilladocker.sytes.net
 
 ### 1.2.4 Paso 4
 
@@ -190,18 +196,27 @@ Tendrá que añadir dos registros DNS de tipo A con la dirección IP pública de
 
 Ejemplo: En la siguiente imagen se muestra cómo sería la configuración de los registros DNS para resolver hacia la dirección IP 54.236.57.173.
 
-Nota: Tenga en cuenta que una vez que ha realizado los cambios en el DNS habrá que esperar hasta que los cambios se progaguen. Puede hacer uso de la utilidad dnschecker.org para comprobar el estado de propagación de las DNS.
+    Como en la práctica anterior, hay problemas para redirigir 'www'
 
 ### 1.2.5 Paso 5
 
 Realizar la instalación y configuración de Docker y Docker Compose en la instancia EC2 de AWS.
+
+    Usamos el script adjunto en la práctica 'docker.sh'
+
+
 ### 1.2.6 Paso 6
 
 Modificar el archivo docker-compose.yml de alguna de las prácticas anteriores para incluir el servicio de HTTPS-PORTAL.
 
 Una vez llegado a este punto, sólo queda desplegar los servicios con Docker Compose y ya tendríamos nuestro sitio web con HTTPS habilidado y todo configurado para que el certificado se vaya renovando automáticamente.
 
-##1.3 Entregables
+    Podemos ver el archivo en el contenido de la práctica.
+
+![](https://imgur.com/vjQwQXn)
+Resultado final.
+
+## 1.3 Entregables
 
 En esta práctica habrá que entregar un documento técnico con la descripción de los pasos que se han llevado a cabo durante todo el proceso.
 
@@ -215,23 +230,17 @@ El documento debe incluir como mínimo lo siguientes contenidos:
 
     URL del sitio web con HTTPS habilitado.
 
-
-**Tareas a realizar**
-------------
-
-
 **Archivos en el repositorio**
 ------------
-1. **README**           Documentación.
-2. **wp-cli.sh**        Script de instalación WP con línea de comandos.
-3. **comandos.md**      Hoja de referencia de comandos para wp-cli
-4. **ACME.sh**          Instalador de Certbot.
+1. **README**                 Documentación.
+2. **docker.sh**              Script de instalación y configuración de herramientas docker, lanzamiento de contenedores.
+3. **.env**                   Entorno (Variables/constantes)
+4. **docker-compose.yml**     Instrucciones de despliegue de contenedores.
 
 **Referencias**
 ------------
 - Guía original para la práctica.
 https://josejuansanchez.org/iaw/practica-https-docker/index.html
-- 
 
 **Editor Markdown**
 ------------
