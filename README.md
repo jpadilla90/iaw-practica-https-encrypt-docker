@@ -173,7 +173,7 @@ Cuando esté creando la instancia deberá configurar los puertos que estarán ab
 - HTTP (80/TCP)
 - HTTPS (443/TCP)
 
-https://imgur.com/F27xkQ5
+![](https://imgur.com/F27xkQ5)
 
 ### 1.2.2 Paso 2
 
@@ -184,7 +184,7 @@ Obtener la dirección IP pública de su instancia EC2 en AWS.
 
 Registrar un nombre de dominio en algún proveedor de nombres de dominio gratuito. Por ejemplo, puede hacer uso de Freenom.
 
-Emplearemos el dominio jpadilladocker.sytes.net
+    Emplearemos el dominio jpadilladocker.sytes.net obtenido en www.noip.com
 
 ### 1.2.4 Paso 4
 
