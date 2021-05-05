@@ -173,7 +173,7 @@ Cuando esté creando la instancia deberá configurar los puertos que estarán ab
 - HTTP (80/TCP)
 - HTTPS (443/TCP)
 
-![](https://imgur.com/F27xkQ5)
+![](https://i.imgur.com/F27xkQ5.png)
 
 ### 1.2.2 Paso 2
 
@@ -213,7 +213,7 @@ Una vez llegado a este punto, sólo queda desplegar los servicios con Docker Com
 
     Podemos ver el archivo en el contenido de la práctica.
 
-![](https://imgur.com/vjQwQXn)
+![](https://i.imgur.com/vjQwQXn.png)
 Resultado final.
 
 ## 1.3 Entregables
