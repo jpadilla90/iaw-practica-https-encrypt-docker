@@ -55,6 +55,7 @@ services:
       # FORCE_RENEW: 'true'
     networks:
       - frontend-network
+      - backend-network
 
 volumes:
   mysql_data:
