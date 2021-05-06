@@ -1,4 +1,4 @@
-# iaw-practica-Certbot
+# iaw-practica-https-encrypt-docker
 HTTPS con Let’s Encrypt, Docker y Docker Compose
 
 > IES Celia Viñas (Almería) - Curso 2020/2021
