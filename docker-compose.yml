@@ -51,7 +51,7 @@ services:
     restart: always
     environment:
       DOMAINS: 'jpadilladocker.sytes.net -> http://prestashop:80'
-      STAGE: 'production' # Don't use production until staging works
+      STAGE: 'staging' # Don't use production until staging works
       # FORCE_RENEW: 'true'
     networks:
       - frontend-network
