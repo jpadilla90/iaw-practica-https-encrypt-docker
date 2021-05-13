@@ -172,6 +172,7 @@ Cuando esté creando la instancia deberá configurar los puertos que estarán ab
 - SSH (22/TCP)
 - HTTP (80/TCP)
 - HTTPS (443/TCP)
+- phpmyadmin 8080
 
 ![](https://i.imgur.com/F27xkQ5.png)
 
@@ -215,6 +216,12 @@ Una vez llegado a este punto, sólo queda desplegar los servicios con Docker Com
 
 ![](https://i.imgur.com/vjQwQXn.png)
 Resultado final.
+
+## Dificultades encontradas
+
+- No fue posible en primera instancia conectar con phpmyadmin. Para ello se abrió el puerto 8080 en el grupo de seguridad de la instancia de AWS y posteriormente se entró desde el navegador con IP:8080, es necesario realizar una prueba con el contenedor de https portal para añadir una segunda redirección a phpmyadmin y entrar directamente.
+- Para obtener un certificado SSL válido, es necesario cambiar el estado del servicio 'httpsportal' de 'staging' a 'production'. Para ello, lanzaramos un "sudo docker-compose down" (Sin -v, porque borraría el progreso) y posteriormente un "sudo docker-compose up" con "-d" si queremos tener libre la terminal al realizar el cambio. De manera casi instantánea, se solicitará un certificado válido.
+- Para acceder a la 'backoffice' (Panel de administración) de PrestaShop se entra con URL/admin e indicaremos la dirección de correo especificada durante la instalación con 'admin' como contraseña.
 
 ## 1.3 Entregables
 
